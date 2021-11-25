@@ -25,3 +25,11 @@ class RockPaperScissors:
             else:
                 sReturn += "Computer wins"
         return sReturn
+
+if __name__ == '__main__':
+    oGame = RockPaperScissors()
+
+    while True:
+        sInput = input("> ")
+        sReturn = oGame.takeTurn(sInput)
+        print(sReturn)
